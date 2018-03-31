@@ -1,0 +1,47 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  background: rgba(23,35,104,1);
+background: -moz-linear-gradient(-45deg, rgba(23,35,104,1) 0%, rgba(226,73,175,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(23,35,104,1)), color-stop(100%, rgba(226,73,175,1)));
+background: -webkit-linear-gradient(-45deg, rgba(23,35,104,1) 0%, rgba(226,73,175,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(23,35,104,1) 0%, rgba(226,73,175,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(23,35,104,1) 0%, rgba(226,73,175,1) 100%);
+background: linear-gradient(135deg, rgba(23,35,104,1) 0%, rgba(226,73,175,1) 100%);
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1300px;
+  background: white;
+  min-height: calc(100vh - 15vh);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 15% 65% 20%;
+
+  #left-menu {
+    .account-dropdown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo {
+        .fab {
+          font-size:  3rem;
+
+        }
+      }
+      .icon {
+        .fa-chevron-down {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
